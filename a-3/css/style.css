@@ -1,0 +1,115 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: '맑은 고딕', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul,li {
+    list-style: none;
+}
+
+/* 플롯 해제 공통 클래스 */
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    width: 1200px;
+    height: 100px;
+    background: #7474f0;
+}
+.headerlogo {
+    width: 200px;
+    /* 플롯 */
+    float: left;
+    padding: 20px 0;
+}
+.gnb {
+    width: 1000px;
+    /* 플롯 */
+    float: right;
+    line-height: 100px;
+}
+.nav {
+    width: 800px;
+    margin-left: 200px;
+    text-align: center;
+}
+.nav>ul>li {
+    /* 플롯 */
+    float: left;
+    width: 200px;
+    height: 100px;
+    /* 포지션 위치기준값*/
+    position: relative;
+}
+.nav>ul>li>a {
+    display: block;
+    font-size: 28px;
+}
+.nav>ul>li>.submenu {
+    /* 포지션 */
+    position: absolute;
+    background: #9393eb;
+}
+.nav>ul>li>.submenu>li {
+    width: 200px;
+    height: 100px;
+}
+.nav>ul>li>.submenu>li>a {
+    display: block;
+    font-size: 22px;
+}
+.nav>ul>li>.submenu>li>a:hover {
+    background: #7474f0;
+}
+
+/* Main */
+.imgslide {
+    width: 1200px;
+    height: 300px;
+}
+.imgslide .img {
+    width: 1200px;
+    height: 300px;
+    /* 포지션 위치기준값 */
+    position: relative;
+}
+.imgtext li a {
+    display: block;
+    background: #7474f0;
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    text-align: center;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-200px);
+    top: 130px;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+
+
+
+.contents {
+    width: 1200px;
+    height: 200px;
+}
