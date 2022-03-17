@@ -76,6 +76,9 @@ main {
     position: relative;
     overflow: hidden;
 }
+.slide {
+    height: 900px;
+}
 .slide li {
     width: 100%;
     position: absolute;
@@ -84,15 +87,7 @@ main {
     overflow: hidden;
 }
 .slide li img {
-    height: 100%;
-}
-/* .slide_container:after {
-    content: '';
-    display: block;
-    clear: both;
-} */
-.slide li {
-    /* float: left; */
+    /* height: 100%; */
 }
 
 /* Contents */
@@ -117,7 +112,7 @@ main {
     float: right;
 }
 
-.tabs .tab_btn li {
+.tabs .tab_btn>li {
     width: 50%;
     border: 1px solid #b5b5b5;
     text-align: center;
@@ -132,12 +127,20 @@ main {
     border: 1px solid #000;
     border-bottom: none;
 }
-
-.tab_contents li:last-child {
-    width: 100%;
+.tab_contents .list {
+    width: 400px;
+    height: 200px;
+}
+.tab_contents .list:last-child {
     display: none;
 }
+.tab_contents .list:last-child:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .tab_contents .list:last-child ul li {
+    width: 33%;
     float: left;
 }
 
