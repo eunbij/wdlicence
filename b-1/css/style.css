@@ -27,14 +27,13 @@ a {
 .header {
     width: 100%;
     height: 100px;
+    background-color: #db5349;
 }
 #headerwrap {
     width: 1200px;
     margin: 0 auto;
-    background-color: #db5349;
 }
 .h_logo {
-    width: 200px;
     line-height: 100px;
     /* 플롯 */
     float: left;
@@ -43,6 +42,8 @@ a {
     display: block;
 }
 .h_logo h1 {
+    /* width: 200px;
+    height: 40px; */
     font-size: 48px;
     color: #fff;
     text-align: center;
@@ -273,11 +274,11 @@ aside {
 .footer {
     width: 100%;
     height: 100px;
+    background-color: #ebebeb;
 }
 #footerwrap {
     width: 1200px;
     margin: 0 auto;
-    background-color: #ebebeb;
 
 }
 .f_logo {
