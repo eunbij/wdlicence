@@ -110,6 +110,9 @@ main {
     height: 300px;
     overflow: hidden;
 }
+.imgslide img {
+    display: block;
+}
 .imgslide ul li {
     /* 포지션 위치기준값 */
     position: relative;
