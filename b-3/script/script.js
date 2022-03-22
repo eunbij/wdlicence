@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     // PopUp
     $('.popup').stop().hide();
-    $('.slide li').eq(0).click(function(){
+    $('.notice li').eq(0).click(function(){
         $('.popup').stop().fadeIn('fast');
     });
     $('.p_btn').click(function(){

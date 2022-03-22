@@ -227,6 +227,9 @@ main {
     margin-left: 210px;
     cursor: pointer;
 }
+.p_btn:hover {
+    background-color: #f79d9d;
+}
 /* D. Footer */
 .footer {
     width: 100%;
