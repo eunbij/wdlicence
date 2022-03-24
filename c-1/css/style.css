@@ -1,0 +1,251 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: "맑은 고딕", sans-serif;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#wrap {
+    width: 1000px;
+    height: 650px;
+}
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* A. Header */
+.header {
+    width: 200px;
+    height: 650px;
+    /* 플롯 */
+    float: left;
+    background-color: rgba(255, 208, 0,.4);
+}
+.h_logo {
+    width: 200px;
+    margin-bottom: 10px;
+}
+.h_logo img {
+    width: 200px;
+    height: 40px;
+}
+.gnb {
+    width: 200px;
+}
+.nav>ul>li>a {
+    display: block;
+    width: 180px;
+    margin: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ffd000;
+}
+.nav>ul>li>a:hover {
+    background-color: #c9a401;
+}
+.submenu>li>a {
+    display: block;
+    width: 180px;
+    height: 60px;
+    margin: 0 10px;
+    line-height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #fff;
+}
+.submenu>li>a:hover {
+    background-color: #c9a401;
+}
+/* Main */
+main {
+    width: 800px;
+    /* 플롯 */
+    float: right;
+}
+/* B. Image Slide */
+.imageslide {
+    width: 800px;
+    height: 350px;
+}
+.slide img {
+    display: block;
+    width: 800px;
+    height: 350px;
+}
+.slide li {
+    /* 포지션 위치기준값 */
+    position: relative;
+    position: absolute;
+}
+.slide p {
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-100px) translateY(-18px);
+    z-index: 20;
+}
+/* C. Contents */
+.contents {
+    width: 800px;
+    height: 200px;
+}
+.tabmenu {
+    margin-top: 4px;
+    width: 300px;
+    /* 플롯 */
+    float: left;
+}
+.tabbtn li {
+    width: 50%;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    /* 플롯 */
+    float: left;
+}
+.tabbtn .on {
+    background-color: #ffd000;
+}
+.tabcontents {
+    width: 300px;
+    margin-top: 40px;
+}
+.tabcontents .notice>li {
+    width: 300px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    padding-left: 4px;
+}
+.tabcontents .gallery {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+.tabcontents .gallery li img {
+    width: 90%;
+}
+.banner {
+    width: 190px;
+    margin-left: 10px;
+    /* 플롯 */
+    float: left;
+}
+.banner img {
+    width: 100%;
+    height: 200px;
+}
+.direct {
+    width: 290px;
+    margin-left: 10px;
+    /* 플롯 */
+    float: right;
+}
+.direct img {
+    width: 100%;
+    height: 200px;
+}
+/* D. Footer */
+.footer {
+    width: 800px;
+    height: 100px;
+    background-color: #ccc;
+}
+.f_logo {
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+    /* 플롯 */
+    float: left;
+}
+.f_logo img {
+    width: 200px;
+    height: 40px;
+}
+.f_side {
+    width: 600px;
+    height: 100px;
+    /* 플롯 */
+    float: right;
+}
+.footermenu {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.footermenu ul {
+    margin-left: 60px;
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/* Popup Layer */
+#wrap {
+    /* 포지션 위치기준값 */
+    position: relative;
+}
+.popup {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #000;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-250px) translateY(-200px);
+    z-index: 100;
+}
+.p_title {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-bottom: 1px solid #000;
+}
+.p_text {
+    height: 220px;
+    margin-top: 20px;
+    padding: 0 24px;
+    font-size: 18px;
+}
+.p_btn {
+    width: 50px;
+    height: 32px;
+    background-color: #ccc;
+    cursor: pointer;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-left: 225px;
+}
