@@ -1,0 +1,224 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: "맑은 고딕",sans-serif;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#wrap {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* A. Header */
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(252, 112, 193);
+}
+.h_logo {
+    width: 200px;
+    /* 플롯 */
+    float: left;
+    padding-top: 30px;
+}
+.h_logo img {
+    width: 200px;
+    height: 40px;
+}
+.gnb {
+    width: 1000px;
+    /* 플롯 */
+    float: right;
+}
+.nav {
+    margin-left: 400px;
+}
+.nav>ul>li {
+    width: 150px;
+    height: 60px;
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 700;
+    /* 플롯 */
+    float: left;
+    /* 포지션 위치기준값 */
+    position: relative;
+}
+.nav>ul>li>a,
+.submenu>li>a {
+    display: block;
+}
+.nav>ul>li>a:hover,
+.submenu>li>a:hover {
+    background-color: pink;
+}
+.submenu {
+    background-color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 10;
+}
+.submenu>li {
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 500;
+}
+/* Main */
+/* B. Image Slide */
+.imgslide {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+.slide {
+}
+.slide img {
+    display: block;
+}
+
+/* C. Contents */
+.contents {
+    width: 1200px;
+    height: 200px;
+}
+.tabmenu {
+    width: 400px;
+    height: 200px;
+    /* 플롯 */
+    float: left;
+}
+.tabbtn li{
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    /* 플롯 */
+    float: left;
+}
+.tabbtn {
+    margin-bottom: 40px;
+}
+.tabbtn li.on {
+    background-color: pink;
+    border: none;
+}
+.tabcontents {
+    height: 160px;
+}
+.notice>li {
+    width: 90%;
+    height: 32px;
+    line-height: 32px;
+}
+.tabcontents .gallery {
+    margin-left: 20px;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner {
+    width: 400px;
+    /* 플롯 */
+    float: left;
+}
+.direct {
+    width: 400px;
+    /* 플롯 */
+    float: right;
+}
+/* Popup Layer */
+#wrap {
+    /* 포지션 위치기준값 */
+    position: relative;
+}
+.popup {
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #000;
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-200px) translateY(-150px);
+    z-index: 100;
+}
+.p_title {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.p_text {
+    height: 160px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+.p_btn {
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-left: 180px;
+    cursor: pointer;
+}
+.p_btn:hover {
+    background-color: pink;
+}
+/* D. Footer  */
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #ccc;
+}
+.f_logo {
+    width: 200px;
+    height: 100%;
+    /* 플롯 */
+    float: left;
+    padding-top: 30px;
+}
+.copyright {
+    width: 800px;
+    height: 100%;
+    /* 플롯 */
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px;
+}
+.sns {
+    width: 200px;
+    height: 100%;
+    /* 플롯 */
+    float: right;
+}
+.sns ul {
+    width: 180px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
